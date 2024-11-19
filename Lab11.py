@@ -32,7 +32,7 @@ if selection == "1":
                 if x[1] == i[1]:
                     possible_points += int(x[2])
                     total_points += int(i[2])/100*int(x[2])
-    print(f"{math.floor(total_points/possible_points*100)}%")
+    print(f"{round(total_points/possible_points*100)}%")
 elif selection == "2":
     assignment_name = input("What is the assignment name: ")
     if assignment_name not in [i[0] for i in assignments]:
